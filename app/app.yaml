@@ -1,0 +1,6 @@
+command: ['streamlit', 'run', 'app.py']
+env:
+  - name: 'DATABRICKS_GENIE_ROOM_ID'
+    value: '01f02ec9fa6214918284618c1d04c9fa'
+  - name: 'DATABRICKS_DASHBOARD_ID'
+    value: '01f027b7deff11cf8cd1f4c4da38f9b9'

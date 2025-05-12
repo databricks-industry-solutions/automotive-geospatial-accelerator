@@ -1,0 +1,76 @@
+bundle:
+  name: auto-geospatial-bundle
+
+resources:
+  clusters:
+    my-ml-cluster:
+      cluster_name: "auto-geospatial-ml-cluster"
+      autoscale:
+        min_workers: 1
+        max_workers: 2
+      spark_version: 15.3.x-cpu-ml-scala2.12
+      # node_type_id is the cluster node type to use.
+      # Typical node types on AWS include i3.xlarge; 
+      # Standard_D3_v2 on Azure;
+      # n1-standard-4 on Google Cloud.      
+      node_type_id: i3.xlarge
+      data_security_mode: SINGLE_USER
+      runtime_engine: PHOTON
+      autotermination_minutes: 30
+      # custom_tags:
+      #   ResourceClass: SingleNode
+      # spark_conf:
+      #   spark.databricks.cluster.profile: "singleNode"
+
+
+  jobs:
+    ingestion-job:
+      name: Auto Geospatial Ingestion and ML Training Job
+      tasks:
+        - task_key: run-ingestion-job
+          notebook_task:
+            notebook_path: "1-Data Ingestion.ipynb"
+          job_cluster_key: auto_geospatial_job_cluster
+        - task_key: run-model-training-job
+          depends_on:
+            - task_key: run-ingestion-job
+          notebook_task:
+            notebook_path: "2-Model Training.ipynb"
+          job_cluster_key: auto_geospatial_job_cluster          
+      job_clusters:
+        - job_cluster_key: auto_geospatial_job_cluster
+          new_cluster:
+            spark_version: 15.3.x-cpu-ml-scala2.12
+            data_security_mode: SINGLE_USER
+            runtime_engine: PHOTON
+            # node_type_id is the cluster node type to use.
+            # Typical node types on AWS include i3.xlarge; 
+            # Standard_D3_v2 on Azure;
+            # n1-standard-4 on Google Cloud.
+            node_type_id: i3.xlarge
+            autoscale:
+              min_workers: 1
+              max_workers: 2
+            # aws_attributes:
+            #   availability: ON_DEMAND 
+            #   zone_id: auto
+
+  dashboards:
+    collision_analytics:
+      display_name: 'Collision Analytics'
+      file_path: 3-Collision Analytics.lvdash.json
+      # warehouse_id: ${var.warehouse_id}        
+      warehouse_id: 4b9b953939869799
+                
+
+  # apps:
+  #   collision_analytics_app:
+  #     name: "collision-analytics-dab"
+  #     description: "Collision Geospatial Analytics"
+  #     source_code_path: ./app
+
+targets:
+  dev:
+    workspace:
+      #host: https://adb-984752964297111.11.azuredatabricks.net
+      host: https://e2-demo-field-eng.cloud.databricks.com/

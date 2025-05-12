@@ -1,0 +1,33 @@
+contributing_factor_grouping,contributing_factor,abs,tpms,brake_pad,accelerometer,blind_spot,lane_departure,fcw,parking_sensor,rear_view_camera,engine_light,rain_sensor,wiper_baldes,fog_light,seatbelt_off,door_ajar
+Outside Distraction,Outside Car Distraction,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Unsafe Driving,Aggressive Driving/Road Rage,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Vehicle Malfunction,Brakes Defective,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+Road Conditions,Traffic Control Device Improper/Non-Working,0,0,0,1,1,0,0,0,0,0,1,1,1,0,0
+Unsafe Driving,Unsafe Lane Changing,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Inexperienced Driver,Backing Unsafely,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Outside Distraction,Reaction to Uninvolved Vehicle,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+Road Conditions,Pavement Defective,0,0,0,1,1,0,0,0,0,0,1,1,1,0,0
+Driverless/Runaway Vehicle,Driverless/Runaway Vehicle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Limited Visibility,View Obstructed/Limited,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+Unsafe Driving,Traffic Control Disregarded,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Vehicle Malfunction,Steering Failure,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+Inexperienced Driver,Turning Improperly,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Unsafe Driving,Unsafe Speed,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Inexperienced Driver,Pedestrian/Bicyclist/Other Pedestrian Error/Confusion,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Limited Visibility,Glare,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+Distracted Driver,Passenger Distraction,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Distracted Driver,Driver Inattention/Distraction,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Impaired Driving,Alcohol Involvement,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+Limited Visibility,Obstruction/Debris,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+Impaired Driving,Fatigued/Drowsy,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+Unsafe Driving,Following Too Closely,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Road Conditions,Pavement Slippery,0,0,0,1,1,0,0,0,0,0,1,1,1,0,0
+Distracted Driver,Cell Phone (hand-Held),0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Impaired Driving,Drugs (illegal),0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+Impaired Driving,Fell Asleep,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+Inexperienced Driver,Failure to Yield Right-of-Way,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Unsafe Driving,Passing or Lane Usage Improper,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Impaired Driving,Illnes,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+Inexperienced Driver,Driver Inexperience,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0
+Unsafe Driving,Passing Too Closely,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+Inexperienced Driver,Failure to Keep Right,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0

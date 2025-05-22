@@ -18,6 +18,17 @@ The content in this repository builds an end-to-end ingestion pipeline for combi
 
 ![Auto Geospatial Reference Architecture](auto-geospatial-ref-architecture.png)
 
+
+### Public datasets used on sample pipeline
+| Dataset       | Source Used                                                                                  | Description                                       | Note                                                        |
+|----------------|---------------------------------------------------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------|
+| Collisions     | [NYC Open Data](http://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data) | A set of road incidents, including contributing factors. | Refer to [Terms of Use](https://opendata.cityofnewyork.us/overview/#termsofuse) for more information.                                    |
+| Traffic Volume | [NYC Open Data](https://data.cityofnewyork.us/Transportation/Automated-Traffic-Volume-Counts/7ym2-wayt/about_data) | Historical traffic volume for a set of lat/long.   | Refer to [Terms of Use](https://opendata.cityofnewyork.us/overview/#termsofuse) for more information.                                  |
+| Road Condition | [511ny](https://511ny.org)                                                                  | Road and traffic conditions.                       | Refer to [Developer Access Agreement](https://511ny.org/developers/daa) for more information                  |
+| Weather        | [Open-Meteo Weather API](http://pypi.org/project/openmeteo-requests/)                        | Historical weather data.                           | Licensed under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)      |
+| Telematics     | [Synthetic](source)                                                                         | A set of rides/drives with driving metrics like acceleration, speed. | Uses [dbldatagen](https://github.com/databrickslabs/dbldatagen) for synthetic generation. |
+
+
 ## Authors
 - [Eumar Assis](mailto:eumar.assis@databricks.com)
 - [Himanshu Gupta](mailto:himanshu.gupta@databricks.com)

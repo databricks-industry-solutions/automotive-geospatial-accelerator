@@ -18,6 +18,22 @@ The content in this repository builds an end-to-end ingestion pipeline for combi
 
 ![Auto Geospatial Reference Architecture](auto-geospatial-ref-architecture.png)
 
+## Code Assets Included
+
+- [Ingestion Pipeline Notebook](./1-Data%20Ingestion.ipynb)
+- [Model Training Notebook](./2-Model%20Training.ipynb)
+- [Sample Dashboard](./3-Collision%20Analytics.lvdash.json)
+- [Lakehouse App](./app/)
+
+
+Lakehouse App with Embedded Dashboard
+
+![Sample App](auto-geospatial-app-dashboard.png)
+
+
+Sample Dashboard
+
+![Sample Dashboard](auto-geospatial-dashboard.png)
 
 ### Public datasets used on sample pipeline
 | Dataset       | Source Used                                                                                  | Description                                       | Note                                                        |

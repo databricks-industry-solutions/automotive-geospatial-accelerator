@@ -8,8 +8,6 @@ anyio==4.9.0
     # via
     #   httpx
     #   jupyter-server
-appnope==0.1.4
-    # via ipykernel
 argon2-cffi==23.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -486,7 +484,7 @@ uri-template==1.3.0
     # via jsonschema
 url-normalize==1.4.3
     # via requests-cache
-urllib3==2.3.0
+urllib3==2.5.0
     # via
     #   requests
     #   requests-cache

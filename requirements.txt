@@ -8,8 +8,6 @@ anyio==4.9.0
     # via
     #   httpx
     #   jupyter-server
-appnope==0.1.4
-    # via ipykernel
 argon2-cffi==23.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -287,6 +285,7 @@ packaging==24.2
     #   matplotlib
     #   nbconvert
     #   pyogrio
+    #   wheel
 pandas==2.2.3
     # via
     #   -r requirements.in
@@ -501,7 +500,7 @@ webencodings==0.5.1
     #   tinycss2
 websocket-client==1.8.0
     # via jupyter-server
-wheel==0.45.1
+wheel==0.46.2
     # via jupyter-packaging
 widgetsnbextension==4.0.13
     # via ipywidgets

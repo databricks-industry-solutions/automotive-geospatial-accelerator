@@ -8,8 +8,6 @@ anyio==4.9.0
     # via
     #   httpx
     #   jupyter-server
-appnope==0.1.4
-    # via ipykernel
 argon2-cffi==23.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -87,7 +85,7 @@ geoarrow-pyarrow==0.1.2
     # via
     #   geoarrow-pandas
     #   keplergl
-geopandas==1.0.1
+geopandas==1.1.2
     # via
     #   -r requirements.in
     #   keplergl
